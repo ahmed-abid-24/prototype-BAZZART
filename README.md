@@ -390,7 +390,6 @@ copies of the Software.
 
 ## 📚 Ressources
 
-- [Architecture détaillée](context.md)
 - [Google Fonts](https://fonts.google.com/?query=Cormorant+Garamond)
 - [Spécifications HTML5](https://html.spec.whatwg.org/)
 - [MDN Web Docs](https://developer.mozilla.org/)
@@ -401,6 +400,6 @@ copies of the Software.
 
 **Vendre local, grandir digital.** 🇹🇳
 
-[Voir le prototype en ligne](#) • [Rapport complet](context.md) • [Conditions d'usage](pages/cgv.html)
+[Voir le prototype en ligne](#) • [Conditions d'usage](pages/cgv.html)
 
 </div>
