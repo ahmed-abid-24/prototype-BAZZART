@@ -356,9 +356,6 @@ copies of the Software.
 ---
 
 ## 📞 Support & Contact
-
-- **Email** : support@bazzart.tn
-- **Hotline** : +216 70 000 000
 - **Instagram** : [@bazzart.official](https://instagram.com/bazzart.official)
 - **TikTok** : [@bazzart.official](https://tiktok.com/@bazzart.official)
 
