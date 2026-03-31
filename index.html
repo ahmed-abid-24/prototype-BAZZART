@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bazzart - Plateforme de vente d'artisanat tunisien authentique. Découvrez des produits traditionnels, mode, design et gastronomie directement des artisans.">
+    <meta name="keywords" content="artisanat tunisien, marketplace, accueil, achats en ligne, produits artisanaux, design tunisien">
+    <meta name="author" content="Bazzart Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bazzart | Accueil">
+    <meta property="og:description" content="Plateforme de vente d'artisanat tunisien authentique">
+    <meta property="og:url" content="https://bazzart.tn/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://bazzart.tn/">
+    <title>Bazzart | Accueil</title>
+    <link rel="icon" type="image/png" href="assets/images/Logo.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+  </head>
+  <body>
+    <div id="siteHeaderMount"></div>
+
+    <main class="page-main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-delivery-pill">Livraison 24/48h dans les grandes villes</div>
+        </div>
+        <div class="container hero-grid">
+          <article>
+            <p class="section-label">Marketplace tunisienne</p>
+            <h1>Vendre local,<br><span class="accent">grandir digital</span></h1>
+            <p>Bazzart aide les small businesses tunisiens a vendre en ligne simplement, avec une experience claire pour les acheteurs et un dashboard BI pour les vendeurs.</p>
+            <p class="hero-proof"><strong id="heroLocalShops">+0</strong> boutiques locales actives deja visibles sur Bazzart</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn btn-primary btn-mobile-full" href="pages/marketplace.html">Explorer la marketplace</a>
+              <a class="btn btn-cta btn-mobile-full" href="pages/register-vendeur.html">Ouvrir ma boutique</a>
+            </div>
+          </article>
+          <aside class="hero-panel" data-parallax>
+            <p class="section-label">Produits tunisiens du moment</p>
+            <div class="hero-carousel" id="heroCarousel"></div>
+            <div class="hero-carousel-dots" id="heroCarouselDots"></div>
+            <p class="section-label" style="margin-top:18px;">Impact local</p>
+            <div class="panel-kpi">
+              <div class="kpi-box"><span>Boutiques actives</span><strong>120+</strong></div>
+              <div class="kpi-box"><span>Produits publies</span><strong>4.2k</strong></div>
+              <div class="kpi-box"><span>Visiteurs/mois</span><strong>38k</strong></div>
+              <div class="kpi-box"><span>Taux conversion</span><strong>3.8%</strong></div>
+            </div>
+            <p style="margin-top:16px; color:var(--text-muted); line-height:1.7;">Passez de Facebook/Instagram a une boutique structuree avec paiement et livraison integres.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <p class="section-label">Categories</p>
+          <h2>Decouvrez les univers Bazzart</h2>
+          <div id="homeCategories" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:18px;"></div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <p class="section-label">Produits vedettes</p>
+          <h2>Les tendances locales</h2>
+          <p class="section-intro">Une selection de produits apprecies par la communaute Bazzart.</p>
+          <div class="grid cols-4" id="homeProducts"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <p class="section-label">Pourquoi Bazzart</p>
+          <h2>Des avantages pour tous</h2>
+          <div class="why-grid" style="display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:24px; margin-top:28px;">
+            <article class="value-card" data-reveal>
+              <div class="value-icon"></div>
+              <h3>Boutique complète en 10 min</h3>
+              <p>Pas besoin d'expertise tech. Inscription simple, publication de produits en quelques clics, et vous êtes en ligne.</p>
+            </article>
+            <article class="value-card" data-reveal>
+              <div class="value-icon"></div>
+              <h3>Livraison clé en main</h3>
+              <p>Nous gérons les partenariats logistiques. Emballez, on se charge du reste. Tous vos clients reçoivent en 24/48h.</p>
+            </article>
+            <article class="value-card" data-reveal>
+              <div class="value-icon"></div>
+              <h3>Paiement sécurisé intégré</h3>
+              <p>Vos clients peuvent payer directement dans la boutique. Fini les virements manuels et les escroqueries.</p>
+            </article>
+            <article class="value-card" data-reveal>
+              <div class="value-icon"></div>
+              <h3>Dashboard BI pour vendeurs</h3>
+              <p>Suivi des ventes en temps réel, statistiques clientes, alertes stock. Décidez vite, avec les bonnes données.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <p class="section-label">Témoignages</p>
+          <h2>Ce que disent nos vendeurs</h2>
+          <div class="testimonials-grid" style="display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:22px; margin-top:28px;" id="testimonialsMount"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="store-card" style="display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+            <div>
+              <p class="section-label">Vendeurs</p>
+              <h2 style="margin:0;">Passez en ligne en moins de 10 min</h2>
+              <p class="section-intro" style="margin-bottom:0;">Inscription en 4 etapes, publication du premier produit, puis suivi des ventes depuis un dashboard simple.</p>
+            </div>
+            <a class="btn btn-cta" href="pages/register-vendeur.html">Demarrer maintenant</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar">
+        <div class="container trust-items">
+          <span class="trust-item">Paiement securise</span>
+          <span class="trust-item">Livraison rapide</span>
+          <span class="trust-item">Avis verifies</span>
+          <span class="trust-item">Support vendeur local</span>
+        </div>
+      </section>
+    </main>
+
+    <div id="siteFooterMount"></div>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart-drawer.js"></script>
+    <script>
+      (function () {
+        function shopById(id) {
+          return window.BAZZART_DATA.boutiques.find(function (s) {
+            return s.id === id;
+          });
+        }
+
+        function card(product) {
+          var shop = shopById(product.shopId);
+          return '<article class="product-card"><div class="product-media"><img src="' + product.image + '" alt="' + product.name + '"></div><div class="product-body"><div class="product-shop">' + (shop ? shop.name : 'Boutique') + '</div><h3 class="product-title">' + product.name + '</h3><div class="product-meta"><strong class="price">' + window.BazzartUtils.formatPrice(product.price) + '</strong><span class="stars">' + window.BazzartUtils.stars(product.rating) + '</span></div><a class="btn btn-primary" href="pages/product-detail.html?id=' + product.id + '">Voir produit</a></div></article>';
+        }
+
+        function heroSlide(product) {
+          return '<article class="hero-slide"><img src="' + product.image + '" alt="' + product.name + '"><div class="hero-slide-copy"><strong>' + product.name + '</strong><span>' + window.BazzartUtils.formatPrice(product.price) + '</span></div></article>';
+        }
+
+        function getUniqueReviews(limit) {
+          var seen = {};
+          var unique = [];
+          for (var i = 0; i < window.BAZZART_DATA.reviews.length && unique.length < limit; i++) {
+            var review = window.BAZZART_DATA.reviews[i];
+            if (!seen[review.shopId]) {
+              seen[review.shopId] = true;
+              unique.push(review);
+            }
+          }
+          return unique;
+        }
+
+        function testimonialCard(review) {
+          var shop = shopById(review.shopId);
+          var shopName = shop ? shop.name : 'Boutique Locale';
+          var stars = [];
+          for (var i = 0; i < 5; i++) {
+            stars.push(i < review.rating ? '★' : '☆');
+          }
+          return '<article class="testimonial-card" data-reveal><div class="testi-header"><div class="testi-avatar">' + shopName.charAt(0) + '</div><div class="testi-info"><strong>' + review.author + '</strong><span>' + shopName + '</span></div></div><p class="testi-quote">"' + review.text + '"</p><div class="testi-stars">' + stars.join('') + '</div></article>';
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+          var catMount = document.getElementById('homeCategories');
+          var proMount = document.getElementById('homeProducts');
+          var testiMount = document.getElementById('testimonialsMount');
+          var carouselMount = document.getElementById('heroCarousel');
+          var dotsMount = document.getElementById('heroCarouselDots');
+          var proofMount = document.getElementById('heroLocalShops');
+          var heroItems = window.BAZZART_DATA.products.slice(0, 5);
+          var activeSlide = 0;
+
+          catMount.innerHTML = window.BAZZART_DATA.categories.map(function (c) {
+            return '<a class="category-chip" href="pages/marketplace.html?category=' + c.id + '"><strong>' + c.icon + '</strong> ' + c.name + '</a>';
+          }).join('');
+          proMount.innerHTML = window.BAZZART_DATA.products.slice(0, 8).map(card).join('');
+          
+          if (testiMount) {
+            var uniqueReviews = getUniqueReviews(4);
+            testiMount.innerHTML = uniqueReviews.map(testimonialCard).join('');
+          }
+
+          if (proofMount) {
+            proofMount.textContent = '+' + window.BAZZART_DATA.boutiques.length;
+          }
+
+          function renderCarousel() {
+            if (!carouselMount || !dotsMount) {
+              return;
+            }
+            carouselMount.innerHTML = heroSlide(heroItems[activeSlide]);
+            dotsMount.innerHTML = heroItems.map(function (_, index) {
+              return '<button class="hero-dot ' + (index === activeSlide ? 'is-active' : '') + '" data-slide="' + index + '" aria-label="Slide ' + (index + 1) + '"></button>';
+            }).join('');
+            dotsMount.querySelectorAll('[data-slide]').forEach(function (btn) {
+              btn.addEventListener('click', function () {
+                activeSlide = Number(btn.getAttribute('data-slide'));
+                renderCarousel();
+              });
+            });
+          }
+
+          renderCarousel();
+          window.setInterval(function () {
+            activeSlide = (activeSlide + 1) % heroItems.length;
+            renderCarousel();
+          }, 3000);
+          
+          if (window.BazzartUI && window.BazzartUI.setupRevealAnimations) {
+            window.BazzartUI.setupRevealAnimations();
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

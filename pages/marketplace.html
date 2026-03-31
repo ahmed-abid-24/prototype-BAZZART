@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez notre marketplace d'artisanat tunisien. Mode, design, bijoux, gastronomie et bien-être. Achetez directement auprès des artisans locaux.">
+    <meta name="keywords" content="marketplace, artisanat, produits tunisiens, mode, design, bijoux, gastronomie">
+    <meta name="author" content="Bazzart Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bazzart | Marketplace d'Artisanat Tunisien">
+    <meta property="og:description" content="Découvrez et achetez des produits d'artisanat tunisien authentique">
+    <meta property="og:url" content="https://bazzart.tn/pages/marketplace.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://bazzart.tn/pages/marketplace.html">
+    <title>Bazzart | Marketplace</title>
+    <link rel="icon" type="image/png" href="../assets/images/Logo.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+  </head>
+  <body>
+    <div id="siteHeaderMount"></div>
+
+    <main class="page-main container">
+      <nav class="breadcrumb" aria-label="Fil d Ariane">
+        <a href="../index.html">Accueil</a>
+        <span>/</span>
+        <strong>Marketplace</strong>
+      </nav>
+
+      <header class="page-head">
+        <h1>Marketplace</h1>
+        <p>Recherchez et filtrez les produits locaux par categorie, region, prix et note.</p>
+      </header>
+
+      <section class="market-controls" id="marketControls">
+        <div class="mobile-filter-head">
+          <button class="btn btn-ghost" id="openFiltersBtn" type="button">Filtres</button>
+          <strong id="resultCountMobile">0 produits</strong>
+        </div>
+
+        <div class="filter-overlay" id="filterOverlay"></div>
+        <div class="filter-shell" id="filterShell">
+          <div class="filter-shell-head">
+            <strong>Affiner la recherche</strong>
+            <button class="btn btn-ghost" id="closeFiltersBtn" type="button">Fermer</button>
+          </div>
+
+          <div class="filter-bar">
+            <input id="searchInput" class="input" type="search" placeholder="Rechercher produit ou boutique...">
+            <select id="categoryFilter" class="select">
+              <option value="">Categorie</option>
+            </select>
+            <input id="priceMin" class="input" type="number" min="0" placeholder="Prix min (TND)">
+            <select id="regionFilter" class="select">
+              <option value="">Region</option>
+            </select>
+            <select id="ratingFilter" class="select">
+              <option value="0">Note min</option>
+              <option value="3">3+</option>
+              <option value="4">4+</option>
+              <option value="4.5">4.5+</option>
+            </select>
+          </div>
+
+          <div class="filter-actions-mobile">
+            <button class="btn btn-ghost" id="resetFiltersBtn" type="button">Reinitialiser</button>
+            <button class="btn btn-cta" id="applyFiltersBtn" type="button">Voir les resultats</button>
+          </div>
+        </div>
+
+        <div class="sort-row">
+          <strong id="resultCount">0 produits</strong>
+          <select id="sortBy" class="select" style="max-width:260px;">
+            <option value="relevance">Pertinence</option>
+            <option value="price-asc">Prix croissant</option>
+            <option value="price-desc">Prix decroissant</option>
+            <option value="new">Nouveautes</option>
+          </select>
+        </div>
+      </section>
+
+      <section>
+        <div id="marketGrid" class="grid cols-4"></div>
+        <div id="pager" class="pagination"></div>
+      </section>
+
+      <section class="quick-view-modal" id="quickViewModal" aria-hidden="true" aria-label="Apercu rapide" hidden>
+        <div class="quick-view-head">
+          <strong>Apercu rapide</strong>
+          <div class="quick-view-head-actions">
+            <button class="icon-close-btn" id="quickViewCloseIcon" type="button" aria-label="Fermer l apercu rapide">×</button>
+          </div>
+        </div>
+        <div id="quickViewBody"></div>
+      </section>
+    </main>
+
+    <div id="siteFooterMount"></div>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/marketplace.js"></script>
+    <script src="../assets/js/cart-drawer.js"></script>
+  </body>
+</html>

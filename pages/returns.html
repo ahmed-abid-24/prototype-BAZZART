@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="Demander un retour ou un remboursement. Disposez de 7 jours pour initier un retour après livraison.">
+    <meta name="keywords" content="retours, remboursement, return, satisfaction garantie">
+    <meta name="author" content="Bazzart Team">
+    <meta name="robots" content="noindex, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bazzart | Retours">
+    <meta property="og:description" content="Gérer vos retours">
+    <meta property="og:url" content="https://bazzart.tn/pages/returns.html">
+    <link rel="canonical" href="https://bazzart.tn/pages/returns.html">    <title>Bazzart | Demander un Retour</title>
+    <link rel="icon" type="image/png" href="../assets/images/Logo.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+  </head>
+  <body>
+    <div id="siteHeaderMount"></div>
+
+    <main class="page-main container">
+      <nav class="breadcrumb" aria-label="Fil d Ariane">
+        <a href="../index.html">Accueil</a>
+        <span>/</span>
+        <a href="order-history.html">Mes commandes</a>
+        <span>/</span>
+        <strong>Demander un retour</strong>
+      </nav>
+
+      <header class="page-head">
+        <h1>Demander un Retour</h1>
+        <p>Vous avez 7 jours apres reception pour retourner vos articles.</p>
+      </header>
+
+      <section class="returns-container">
+        <div class="store-card returns-timeline">
+          <h3>Delai de retour</h3>
+          <div class="timeline-visual">
+            <div class="timeline-step">
+              <span class="timeline-dot is-done"></span>
+              <span>Reception</span>
+            </div>
+            <div class="timeline-step">
+              <span class="timeline-dot"></span>
+              <span>Jour 1-7</span>
+            </div>
+            <div class="timeline-step">
+              <span class="timeline-dot"></span>
+              <span>Demande autorisee</span>
+            </div>
+          </div>
+          <p class="text-muted">Vous devez demander un retour dans les 7 jours suivant le reception du colis.</p>
+        </div>
+
+        <form id="returnsForm" class="store-card">
+          <h3>Formulaire de Retour</h3>
+
+          <label>
+            <strong>Numero de commande</strong> *
+            <input class="input" id="orderIdInput" type="text" placeholder="Ex: #CMD2024001" required readonly>
+            <small class="field-feedback"></small>
+          </label>
+
+          <label>
+            <strong>Produit a retourner</strong> *
+            <select id="productSelect" class="input" required>
+              <option value="">-- Selectionnez le produit --</option>
+            </select>
+            <small class="field-feedback"></small>
+          </label>
+
+          <label>
+            <strong>Quantite</strong> *
+            <input class="input" id="quantityInput" type="number" min="1" placeholder="1" required>
+            <small class="field-feedback"></small>
+          </label>
+
+          <label>
+            <strong>Motif du retour</strong> *
+            <select id="reasonSelect" class="input" required>
+              <option value="">-- Selectionnez un motif --</option>
+              <option value="non-conforme">Article non conforme a la description</option>
+              <option value="defaut">Article defectueux</option>
+              <option value="non-desire">Article non desiré</option>
+              <option value="erreur">Erreur de livraison (article incorrect)</option>
+              <option value="endommage">Article endommage a la reception</option>
+              <option value="autre">Autre (a preciser ci-dessous)</option>
+            </select>
+            <small class="field-feedback"></small>
+          </label>
+
+          <label>
+            <strong>Description detaillee de votre demande</strong>
+            <textarea class="textarea" id="descriptionInput" rows="5" placeholder="Decrivez le probleme ou les raisons du retour..." required></textarea>
+            <small class="field-feedback"></small>
+          </label>
+
+          <fieldset>
+            <legend>Condition de l article</legend>
+            <label class="radio-label">
+              <input type="radio" name="condition" value="intact" checked>
+              <span>Intact, jamais utilise</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="condition" value="leger">
+              <span>Legere usure (essaye seulement)</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="condition" value="endommage">
+              <span>Endommage, avec defauts</span>
+            </label>
+          </fieldset>
+
+          <label class="checkbox-label">
+            <input type="checkbox" id="acceptTermsCheckbox" required>
+            <span>
+              J accepte les <a href="cgv.html" target="_blank">conditions de retour</a>. 
+              Je comprends que les retours seront traites sous 5-7 jours ouvrables.
+            </span>
+          </label>
+
+          <div style="display: flex; gap: 8px; margin-top: 2em;">
+            <button class="btn btn-cta" type="submit">Soumettre la demande</button>
+            <a href="order-history.html" class="btn btn-secondary">Annuler</a>
+          </div>
+        </form>
+
+        <div id="successMessage" class="empty-state" style="display:none;">
+          <h3>Demande de retour soumise</h3>
+          <p>Votre demande a ete recue avec succes. Le vendeur examinera votre demande sous 48h.</p>
+          <p style="margin-bottom: 1.5em;">Numero de demande: <strong id="returnIdTicket">#RET202400000</strong></p>
+          <p class="text-muted">Vous recevrez une notification avec le code de retour et les instructions d expedition.</p>
+          <a href="order-history.html" class="btn btn-primary">Retour aux commandes</a>
+        </div>
+      </section>
+    </main>
+
+    <div id="siteFooterMount"></div>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/returns.js"></script>
+  </body>
+</html>

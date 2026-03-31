@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="Consultez votre historique de commandes Bazzart. Suivez l'état de vos achats et gérez vos retours.">
+    <meta name="keywords" content="commandes, historique, suivi, retours">
+    <meta name="author" content="Bazzart Team">
+    <meta name="robots" content="noindex, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bazzart | Historique des Commandes">
+    <meta property="og:description" content="Suivi de vos commandes">
+    <meta property="og:url" content="https://bazzart.tn/pages/order-history.html">
+    <link rel="canonical" href="https://bazzart.tn/pages/order-history.html">    <title>Bazzart | Historique des Commandes</title>
+    <link rel="icon" type="image/png" href="../assets/images/Logo.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+  </head>
+  <body>
+    <div id="siteHeaderMount"></div>
+
+    <main class="page-main container">
+      <nav class="breadcrumb" aria-label="Fil d Ariane">
+        <a href="../index.html">Accueil</a>
+        <span>/</span>
+        <a href="account.html">Mon Compte</a>
+        <span>/</span>
+        <strong>Historique Commandes</strong>
+      </nav>
+
+      <header class="page-head">
+        <h1>Mes Commandes</h1>
+        <p>Consultez l historique et le suivi de vos commandes.</p>
+      </header>
+
+      <section class="order-history-filters">
+        <label for="statusFilter">Filtrer par statut:</label>
+        <select id="statusFilter" class="input">
+          <option value="">Tous les statuts</option>
+          <option value="Preparation">Preparation</option>
+          <option value="Expedition">Expedition</option>
+          <option value="Livree">Livree</option>
+        </select>
+      </section>
+
+      <div id="ordersList" class="orders-grid">
+        <!-- Sera complete par JavaScript -->
+      </div>
+
+      <div id="noOrders" class="empty-state" style="display:none;">
+        <h3>Aucune commande yet</h3>
+        <p>Vous n avez pas encore effectue de commande. <a href="marketplace.html">Decouvrez la marketplace</a></p>
+      </div>
+    </main>
+
+    <div id="siteFooterMount"></div>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/order-history.js"></script>
+  </body>
+</html>

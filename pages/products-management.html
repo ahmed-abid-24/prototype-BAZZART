@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="Gestion des produits. Ajoutez, modifiez et supprimez vos articles de vente.">
+    <meta name="keywords" content="produits, inventaire, gestion, vente">
+    <meta name="author" content="Bazzart Team">
+    <meta name="robots" content="noindex, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bazzart | Gestion Produits">
+    <meta property="og:url" content="https://bazzart.tn/pages/products-management.html">
+    <link rel="canonical" href="https://bazzart.tn/pages/products-management.html">    <title>Bazzart | Gestion Produits</title>
+    <link rel="icon" type="image/png" href="../assets/images/Logo.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+  </head>
+  <body>
+    <div id="siteHeaderMount"></div>
+
+    <main class="page-main container">
+      <nav class="breadcrumb" aria-label="Fil d Ariane">
+        <a href="../index.html">Accueil</a>
+        <span>/</span>
+        <a href="dashboard-vendeur.html">Dashboard</a>
+        <span>/</span>
+        <strong>Gestion Produits</strong>
+      </nav>
+
+      <header class="page-head">
+        <h1>Mes Produits</h1>
+        <p>Ajoutez, modifiez ou supprimez vos produits.</p>
+      </header>
+
+      <section class="seller-actions">
+        <button id="addProductBtn" class="btn btn-cta">+ Ajouter un produit</button>
+        <input id="searchProducts" class="input" type="text" placeholder="Rechercher un produit...">
+      </section>
+
+      <!-- FORM AJOUTER/MODIFIER PRODUIT -->
+      <form id="productForm" class="store-card seller-form" style="display:none;">
+        <h2>Ajouter/Modifier un Produit</h2>
+        
+        <label>
+          Nom du produit *
+          <input class="input" id="productNameInput" type="text" required>
+        </label>
+
+        <label>
+          Description *
+          <textarea class="textarea" id="productDescInput" rows="4" required></textarea>
+        </label>
+
+        <label>
+          Categorie *
+          <select id="categorySelect" class="input" required>
+            <option value="">-- Selectionnez --</option>
+            <option value="artisanat">Artisanat</option>
+            <option value="mode">Mode</option>
+            <option value="alimentaire">Alimentaire</option>
+            <option value="beaute">Beaute</option>
+            <option value="deco">Deco</option>
+            <option value="tech">Tech</option>
+          </select>
+        </label>
+
+        <label>
+          Prix (TND) *
+          <input class="input" id="priceInput" type="number" min="1000" step="1000" required>
+        </label>
+
+        <label>
+          Stock *
+          <input class="input" id="stockInput" type="number" min="1" required>
+        </label>
+
+        <label>
+          Image (URL) *
+          <input class="input" id="imageInput" type="url" placeholder="https://images.example.com/..." required>
+        </label>
+
+        <div style="display: flex; gap: 8px;">
+          <button class="btn btn-cta" type="submit">Sauvegarder produit</button>
+          <button class="btn btn-secondary" type="button" id="cancelProductBtn">Annuler</button>
+        </div>
+      </form>
+
+      <!-- LISTE PRODUITS -->
+      <div id="productsList" class="products-management-table">
+        <!-- Completée par JavaScript -->
+      </div>
+    </main>
+
+    <div id="siteFooterMount"></div>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/products-management.js"></script>
+  </body>
+</html>

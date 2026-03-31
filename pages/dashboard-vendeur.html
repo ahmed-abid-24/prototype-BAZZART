@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="Tableau de bord vendeur Bazzart. Gérez vos produits, commandes et statistiques de vente.">
+    <meta name="keywords" content="dashboard, vendeur, statut, produits, ventes">
+    <meta name="author" content="Bazzart Team">
+    <meta name="robots" content="noindex, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bazzart | Dashboard Vendeur">
+    <meta property="og:description" content="Gestion de votre boutique">
+    <meta property="og:url" content="https://bazzart.tn/pages/dashboard-vendeur.html">
+    <link rel="canonical" href="https://bazzart.tn/pages/dashboard-vendeur.html">    <title>Bazzart | Dashboard vendeur</title>
+    <link rel="icon" type="image/png" href="../assets/images/Logo.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+  </head>
+  <body>
+    <div id="siteHeaderMount"></div>
+
+    <main class="page-main container">
+      <header class="page-head">
+        <h1>Dashboard vendeur</h1>
+        <p>Suivez vos indicateurs, commandes recentes et recommandations business.</p>
+      </header>
+
+      <section id="dashboardMount">
+        <div class="grid cols-4" style="margin-bottom:18px;">
+          <article class="kpi-card"><span class="label">Ventes du mois</span><div class="value" id="kpiSales">0 TND</div></article>
+          <article class="kpi-card"><span class="label">Commandes</span><div class="value" id="kpiOrders">0</div></article>
+          <article class="kpi-card"><span class="label">Visiteurs</span><div class="value" id="kpiVisits">0</div></article>
+          <article class="kpi-card"><span class="label">Conversion</span><div class="value" id="kpiConv">0%</div></article>
+        </div>
+
+        <div class="dashboard-charts-grid">
+          <article class="chart-shell">
+            <h3>Evolution des ventes (6 mois)</h3>
+            <canvas id="salesChart" height="120"></canvas>
+          </article>
+          <article class="chart-shell">
+            <h3>Repartition categories</h3>
+            <canvas id="catChart" height="120"></canvas>
+          </article>
+          <article class="chart-shell">
+            <h3>Ventes par jour (cette semaine)</h3>
+            <canvas id="weekChart" height="120"></canvas>
+          </article>
+          <article class="chart-shell">
+            <h3>Trafic par heure (24h)</h3>
+            <canvas id="trafficChart" height="120"></canvas>
+          </article>
+        </div>
+
+        <section class="grid cols-2" style="margin-top:18px; align-items:start;">
+          <article class="chart-shell">
+            <h3>Dernieres commandes</h3>
+            <table class="table">
+              <thead>
+                <tr><th>ID</th><th>Client</th><th>Montant</th><th>Statut</th></tr>
+              </thead>
+              <tbody id="ordersBody"></tbody>
+            </table>
+          </article>
+
+          <article class="chart-shell">
+            <h3>Top produits</h3>
+            <ol id="topProducts" style="margin:0 0 18px;"></ol>
+            <h3>Recommandations IA (simule)</h3>
+            <ul class="insight-list">
+              <li>Ajoutez plus de photos produit pour augmenter le taux de conversion.</li>
+              <li>Mettez en avant vos produits a forte marge dans la section vedette.</li>
+              <li>Repondez aux avis clients en moins de 24h pour renforcer la confiance.</li>
+            </ul>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <div id="siteFooterMount"></div>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+  </body>
+</html>

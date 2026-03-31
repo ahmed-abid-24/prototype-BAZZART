@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="Gestion des avis clients. Répondez et gérez les évaluations de vos produits.">
+    <meta name="keywords" content="avis, évaluations, clients, réponses">
+    <meta name="author" content="Bazzart Team">
+    <meta name="robots" content="noindex, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bazzart | Gestion des Avis">
+    <meta property="og:url" content="https://bazzart.tn/pages/reviews-management.html">
+    <link rel="canonical" href="https://bazzart.tn/pages/reviews-management.html">    <title>Bazzart | Gestion Avis</title>
+    <link rel="icon" type="image/png" href="../assets/images/Logo.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+  </head>
+  <body>
+    <div id="siteHeaderMount"></div>
+
+    <main class="page-main container">
+      <nav class="breadcrumb" aria-label="Fil d Ariane">
+        <a href="../index.html">Accueil</a>
+        <span>/</span>
+        <a href="dashboard-vendeur.html">Dashboard</a>
+        <span>/</span>
+        <strong>Gestion Avis</strong>
+      </nav>
+
+      <header class="page-head">
+        <h1>Avis Clients</h1>
+        <p>Consultez et repondez aux avis laisses par vos clients.</p>
+      </header>
+
+      <section class="filter-bar">
+        <label>Filtrer par note:
+          <select id="ratingFilter" class="input">
+            <option value="">Tous les avis</option>
+            <option value="5">5 etoiles</option>
+            <option value="4">4 etoiles</option>
+            <option value="3">3 etoiles</option>
+            <option value="2">2 etoiles</option>
+            <option value="1">1 etoile</option>
+          </select>
+        </label>
+        <label>Trier par:
+          <select id="sortFilter" class="input">
+            <option value="recent">Plus recent</option>
+            <option value="rating-high">Note plus haute</option>
+            <option value="rating-low">Note plus basse</option>
+          </select>
+        </label>
+      </section>
+
+      <div id="reviewsList" class="reviews-list">
+        <!-- Completée par JavaScript -->
+      </div>
+    </main>
+
+    <div id="siteFooterMount"></div>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/reviews-management.js"></script>
+  </body>
+</html>

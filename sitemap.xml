@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- MAIN PAGES -->
+    <url>
+        <loc>https://bazzart.tn/</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- MARKETPLACE & SHOPPING -->
+    <url>
+        <loc>https://bazzart.tn/pages/marketplace.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/panier.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/checkout.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/confirmation.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- BUYER PAGES -->
+    <url>
+        <loc>https://bazzart.tn/pages/account.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/order-history.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/wishlist.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/returns.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/notifications.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/chat.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- SEARCH & DISCOVERY -->
+    <url>
+        <loc>https://bazzart.tn/pages/search.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- SELLER PAGES -->
+    <url>
+        <loc>https://bazzart.tn/pages/dashboard-vendeur.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/register-vendeur.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/products-management.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/reviews-management.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/returns-management.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/shop-settings.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- AUTHENTICATION -->
+    <url>
+        <loc>https://bazzart.tn/pages/login.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- LEGAL & INFORMATION PAGES -->
+    <url>
+        <loc>https://bazzart.tn/pages/faq.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/mentions-legales.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/politique-confidentialite.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://bazzart.tn/pages/cgv.html</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- PRODUCTS (estimated sample URLs) -->
+    <url>
+        <loc>https://bazzart.tn/pages/product-detail.html</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>

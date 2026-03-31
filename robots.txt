@@ -1,0 +1,30 @@
+# robots.txt for Bazzart.tn
+# Allows search engines to index all public pages
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /pages/
+Allow: /assets/
+
+# Disallow sensitive areas
+Disallow: /admin/
+Disallow: /dashboard-vendeur.html
+Disallow: /pages/dashboard-vendeur.html
+Disallow: /pages/account.html
+Disallow: /pages/order-history.html
+Disallow: /pages/products-management.html
+Disallow: /pages/reviews-management.html
+Disallow: /pages/returns-management.html
+Disallow: /pages/shop-settings.html
+
+# Crawl delay recommendations
+Crawl-delay: 2
+
+# Sitemap reference
+Sitemap: https://bazzart.tn/sitemap.xml
+
+# Additional directives for specific bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestion de compte Bazzart. Modifiez votre profil, préférences et paramètres de sécurité.">
+    <meta name="keywords" content="compte utilisateur, profil, préférences, sécurité">
+    <meta name="author" content="Bazzart Team">
+    <meta name="robots" content="noindex, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bazzart | Mon Compte">
+    <meta property="og:description" content="Gestion de votre compte personnel">
+    <meta property="og:url" content="https://bazzart.tn/pages/account.html">
+    <link rel="canonical" href="https://bazzart.tn/pages/account.html">
+    <title>Bazzart | Mon Compte</title>
+    <link rel="icon" type="image/png" href="../assets/images/Logo.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+  </head>
+  <body>
+    <div id="siteHeaderMount"></div>
+
+    <main class="page-main container">
+      <nav class="breadcrumb" aria-label="Fil d Ariane">
+        <a href="../index.html">Accueil</a>
+        <span>/</span>
+        <strong>Mon Compte</strong>
+      </nav>
+
+      <header class="page-head">
+        <h1>Mon Compte</h1>
+        <p>Gerez votre profil, vos preferences et votre securite.</p>
+      </header>
+
+      <section class="account-layout">
+        <nav class="account-nav">
+          <button class="account-nav-btn is-active" data-tab="profil">Profil</button>
+          <button class="account-nav-btn" data-tab="preferences">Preferences</button>
+          <button class="account-nav-btn" data-tab="securite">Securite</button>
+        </nav>
+
+        <!-- TAB PROFIL -->
+        <section id="profil-tab" class="account-tab store-card is-visible">
+          <h2>Informations Personnelles</h2>
+          <form id="profilForm" class="account-form">
+            <label>
+              Nom complet
+              <input class="input" id="fullNameInput" type="text" placeholder="Votre nom complet" required>
+              <small class="field-feedback"></small>
+            </label>
+
+            <label>
+              Email
+              <input class="input" id="emailInput" type="email" placeholder="votre.email@exemple.com" required>
+              <small class="field-feedback"></small>
+            </label>
+
+            <label>
+              Telephone
+              <input class="input" id="phoneInput" type="tel" placeholder="+216 XX XXX XXX" required>
+              <small class="field-feedback"></small>
+            </label>
+
+            <label>
+              Adresse
+              <textarea class="textarea" id="addressInput" rows="3" placeholder="Votre adresse de livraison par defaut" required></textarea>
+              <small class="field-feedback"></small>
+            </label>
+
+            <button class="btn btn-cta" type="submit">Sauvegarder modifications</button>
+          </form>
+        </section>
+
+        <!-- TAB PREFERENCES -->
+        <section id="preferences-tab" class="account-tab store-card">
+          <h2>Preferences</h2>
+          <form id="prefsForm" class="account-form">
+            <fieldset>
+              <legend>Communications</legend>
+              <label class="checkbox-label">
+                <input type="checkbox" id="newsletterCheckbox" name="newsletter">
+                <span>Recevoir la newsletter Bazzart (nouveautes, offres exclusives)</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="ordersCheckbox" name="orders" checked>
+                <span>Notifier pour suivi de commandes</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="offersCheckbox" name="offers" checked>
+                <span>Offres personnalisees selon mes achats</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="pushCheckbox" name="push">
+                <span>Notifications push mobile (si applicable)</span>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Confidentialite</legend>
+              <label class="radio-label">
+                <input type="radio" name="visibility" value="private" checked>
+                <span>Profil prive (mes avis ne sont pas publics)</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="visibility" value="public">
+                <span>Profil public (mes avis et ratings sont visibles)</span>
+              </label>
+            </fieldset>
+
+            <button class="btn btn-cta" type="submit">Sauvegarder preferences</button>
+          </form>
+        </section>
+
+        <!-- TAB SECURITE -->
+        <section id="securite-tab" class="account-tab store-card">
+          <h2>Securite du Compte</h2>
+
+          <div class="security-section">
+            <h3>Mot de passe</h3>
+            <p class="text-muted">Derniere modification: <strong id="passwordDate">N/A</strong></p>
+            <button class="btn btn-secondary" id="changePasswordBtn">Changer mot de passe</button>
+
+            <form id="passwordForm" class="account-form" style="display:none; margin-top: 1em;">
+              <label>
+                Ancien mot de passe
+                <input class="input" id="oldPasswordInput" type="password" required>
+              </label>
+              <label>
+                Nouveau mot de passe (min 6 caracteres)
+                <input class="input" id="newPasswordInput" type="password" minlength="6" required>
+              </label>
+              <label>
+                Confirmer nouveau mot de passe
+                <input class="input" id="confirmPasswordInput" type="password" minlength="6" required>
+              </label>
+              <small class="field-feedback" id="passwordFeedback"></small>
+              <div style="display: flex; gap: 8px;">
+                <button class="btn btn-cta" type="submit">Mettre a jour</button>
+                <button class="btn btn-secondary" type="button" id="cancelPasswordBtn">Annuler</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="security-section" style="margin-top: 2em; padding-top: 2em; border-top: 1px solid var(--border);">
+            <h3>Suppression du Compte</h3>
+            <p class="text-muted">Cette action est irreversible. Toutes vos donnees seront supprimees.</p>
+            <button class="btn btn-danger" id="deleteAccountBtn">Supprimer mon compte</button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div id="siteFooterMount"></div>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/account.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="Devenir vendeur sur Bazzart. Rejoignez notre plateforme et vendez vos produits artisanaux tunisiens.">
+    <meta name="keywords" content="vendeur, enregistrement, inscription, vendre, artisanat">
+    <meta name="author" content="Bazzart Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bazzart | Devenir Vendeur">
+    <meta property="og:description" content="Inscription des vendeurs">
+    <meta property="og:url" content="https://bazzart.tn/pages/register-vendeur.html">
+    <link rel="canonical" href="https://bazzart.tn/pages/register-vendeur.html">    <title>Bazzart | Inscription vendeur</title>
+    <link rel="icon" type="image/png" href="../assets/images/Logo.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+  </head>
+  <body>
+    <div id="siteHeaderMount"></div>
+
+    <main class="page-main container">
+      <header class="page-head">
+        <h1>Inscription vendeur</h1>
+        <p>Configurez votre boutique en 4 etapes.</p>
+      </header>
+
+      <section class="store-card" style="max-width:760px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+          <strong id="stepLabel">Etape 1 / 4</strong>
+          <span style="color:var(--text-muted);">Prototype MVP</span>
+        </div>
+        <div class="progress" style="margin-bottom:18px;"><span id="progressBarFill"></span></div>
+
+        <form id="sellerForm" style="display:grid; gap:14px;">
+          <div data-step="1">
+            <h3 style="margin-top:0; color:var(--navy);">Infos personnelles</h3>
+            <label>Nom complet
+              <input class="input" name="fullName" required>
+            </label>
+            <label>Email
+              <input class="input" type="email" name="email" required>
+            </label>
+            <label>Telephone
+              <input class="input" name="phone" required>
+            </label>
+          </div>
+
+          <div data-step="2" class="hidden">
+            <h3 style="margin-top:0; color:var(--navy);">Informations boutique</h3>
+            <label>Nom boutique
+              <input class="input" name="shopName" required>
+            </label>
+            <label>Categorie principale
+              <select class="select" name="category" required>
+                <option value="">Selectionner</option>
+                <option value="artisanat">Artisanat</option>
+                <option value="mode">Mode</option>
+                <option value="alimentaire">Alimentaire</option>
+                <option value="beaute">Beaute</option>
+                <option value="deco">Deco</option>
+                <option value="tech">Tech</option>
+              </select>
+            </label>
+            <label>Description courte
+              <textarea class="textarea" rows="3" name="description" required></textarea>
+            </label>
+          </div>
+
+          <div data-step="3" class="hidden">
+            <h3 style="margin-top:0; color:var(--navy);">Localisation</h3>
+            <label>Gouvernorat
+              <select class="select" name="governor" required>
+                <option value="">Selectionner</option>
+                <option value="Tunis">Tunis</option>
+                <option value="Ariana">Ariana</option>
+                <option value="Ben Arous">Ben Arous</option>
+                <option value="Sousse">Sousse</option>
+                <option value="Sfax">Sfax</option>
+                <option value="Nabeul">Nabeul</option>
+                <option value="Monastir">Monastir</option>
+              </select>
+            </label>
+            <label>Ville
+              <input class="input" name="city" required>
+            </label>
+          </div>
+
+          <div data-step="4" class="hidden">
+            <h3 style="margin-top:0; color:var(--navy);">Premier produit</h3>
+            <label>Nom produit
+              <input class="input" name="firstProduct" required>
+            </label>
+            <label>Prix (TND)
+              <input class="input" type="number" name="firstPrice" required>
+            </label>
+            <label>Stock initial
+              <input class="input" type="number" name="firstStock" required>
+            </label>
+            <label>Photo produit
+              <input class="input" type="file" id="productPhoto" accept="image/*">
+            </label>
+            <img id="photoPreview" class="hidden" alt="Apercu" style="max-width:220px; border-radius:10px; border:1px solid var(--border);">
+          </div>
+
+          <div style="display:flex; gap:10px; justify-content:space-between; flex-wrap:wrap;">
+            <button class="btn btn-ghost" id="prevStepBtn" type="button">Precedent</button>
+            <div style="display:flex; gap:8px;">
+              <button class="btn btn-primary" id="nextStepBtn" type="button">Suivant</button>
+              <button class="btn btn-cta" type="submit">Finaliser</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <div id="siteFooterMount"></div>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/register.js"></script>
+  </body>
+</html>

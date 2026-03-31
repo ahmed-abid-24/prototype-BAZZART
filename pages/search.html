@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recherche avancée de produits artisanaux tunisiens. Filtrez par catégorie, prix, note et vendeur.">
+    <meta name="keywords" content="recherche, filtres, artisanat, produits, marketplace">
+    <meta name="author" content="Bazzart Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bazzart | Recherche Avancée">
+    <meta property="og:description" content="Recherche avancée de produits artisanaux">
+    <meta property="og:url" content="https://bazzart.tn/pages/search.html">
+    <link rel="canonical" href="https://bazzart.tn/pages/search.html">
+    <title>Bazzart | Recherche avancée</title>
+    <link rel="icon" type="image/png" href="../assets/images/Logo.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+  </head>
+  <body>
+    <div id="siteHeaderMount"></div>
+
+    <main class="page-main container">
+      <nav class="breadcrumb" aria-label="Fil d Ariane">
+        <a href="../index.html">Accueil</a>
+        <span>/</span>
+        <strong>Recherche</strong>
+      </nav>
+
+      <header class="page-head">
+        <h1>Recherche avancée</h1>
+        <p>Trouvez les produits artisanaux qui vous plaisent.</p>
+      </header>
+
+      <section class="search-container">
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <input id="searchInput" class="input" type="text" placeholder="Rechercher des produits..." autocomplete="off">
+          <button id="searchBtn" class="btn btn-cta" type="button">Rechercher</button>
+        </div>
+
+        <div class="search-layout">
+          <!-- Filter Sidebar (toggle on mobile) -->
+          <aside class="search-filters">
+            <h3>Filtres</h3>
+
+            <!-- Category Filter -->
+            <fieldset>
+              <legend>Catégories</legend>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="category" value="mode"> Mode
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="category" value="maison"> Maison & Design
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="category" value="beaute"> Beauté & Bien-être
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="category" value="art"> Art & Création
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="category" value="bijoux"> Bijoux
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="category" value="gastronomie"> Gastronomie
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Price Range Filter -->
+            <fieldset>
+              <legend>Prix (TND)</legend>
+              <label for="minPrice">Min</label>
+              <input id="minPrice" class="input" type="number" min="0" value="0" placeholder="0">
+              <label for="maxPrice">Max</label>
+              <input id="maxPrice" class="input" type="number" min="0" value="999999" placeholder="999999">
+            </fieldset>
+
+            <!-- Rating Filter -->
+            <fieldset>
+              <legend>Évaluation</legend>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="rating" value="all" checked> Tous
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="rating" value="4"> 4★ et plus
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="rating" value="3"> 3★ et plus
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Stock Filter -->
+            <fieldset>
+              <legend>Disponibilité</legend>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input id="inStockOnly" type="checkbox" name="stock" value="true"> En stock uniquement
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Shop Filter -->
+            <fieldset>
+              <legend>Vendeur</legend>
+              <select id="shopFilter" class="input">
+                <option value="">Tous les vendeurs</option>
+              </select>
+            </fieldset>
+
+            <button id="resetFilters" class="btn btn-secondary" type="button" style="width: 100%; margin-top: 12px;">Réinitialiser</button>
+          </aside>
+
+          <!-- Results Section -->
+          <section class="search-results">
+            <!-- Sort Bar -->
+            <div class="results-toolbar">
+              <div id="resultsCount" class="results-count">0 produits trouvés</div>
+              <select id="sortBy" class="input">
+                <option value="newest">Plus récents</option>
+                <option value="price-asc">Prix : bas à haut</option>
+                <option value="price-desc">Prix : haut à bas</option>
+                <option value="popularity">Populaires</option>
+                <option value="rating">Évaluations</option>
+              </select>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="productsGrid" class="products-grid">
+              <!-- Completed by JavaScript -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="noResults" class="empty-state" style="display:none; padding: 40px;">
+              <h3>Aucun produit trouvé</h3>
+              <p>Essayez de modifier vos critères de recherche.</p>
+              <a href="../marketplace.html" class="btn btn-cta">Retourner au marketplace</a>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <div id="siteFooterMount"></div>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/cart-drawer.js"></script>
+    <script src="../assets/js/mobile-filters.js"></script>
+  </body>
+</html>

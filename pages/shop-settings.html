@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="Paramètres de boutique. Modifiez les informations, coordonnées et méthodes de paiement de votre magasin.">
+    <meta name="keywords" content="paramètres, boutique, configuration, informations">
+    <meta name="author" content="Bazzart Team">
+    <meta name="robots" content="noindex, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bazzart | Paramètres Boutique">
+    <meta property="og:url" content="https://bazzart.tn/pages/shop-settings.html">
+    <link rel="canonical" href="https://bazzart.tn/pages/shop-settings.html">    <title>Bazzart | Parametres Boutique</title>
+    <link rel="icon" type="image/png" href="../assets/images/Logo.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+  </head>
+  <body>
+    <div id="siteHeaderMount"></div>
+
+    <main class="page-main container">
+      <nav class="breadcrumb" aria-label="Fil d Ariane">
+        <a href="../index.html">Accueil</a>
+        <span>/</span>
+        <a href="dashboard-vendeur.html">Dashboard</a>
+        <span>/</span>
+        <strong>Parametres Boutique</strong>
+      </nav>
+
+      <header class="page-head">
+        <h1>Parametres de ma Boutique</h1>
+        <p>Personnalisez votre profil et vos parametres de vente.</p>
+      </header>
+
+      <form id="shopSettingsForm" class="store-card" style="max-width: 600px;">
+        <h2>Informations Boutique</h2>
+
+        <label>
+          Nom de la boutique *
+          <input class="input" id="shopNameInput" type="text" placeholder="Mon boutique" required>
+        </label>
+
+        <label>
+          Slogan/Description courte
+          <input class="input" id="sloganInput" type="text" placeholder="Ex: Produits artisanaux de qualite">
+        </label>
+
+        <label>
+          Description complete
+          <textarea class="textarea" id="descriptionLongInput" rows="5" placeholder="Decrivez votre boutique, votre histoire..."></textarea>
+        </label>
+
+        <label>
+          Logo (URL)
+          <input class="input" id="logoInput" type="url" placeholder="https://images.example.com/...">
+        </label>
+
+        <h2 style="margin-top: 2em;">Contact et Localisation</h2>
+
+        <label>
+          Telephone de contact *
+          <input class="input" id="phoneInput" type="tel" required>
+        </label>
+
+        <label>
+          Email de contact *
+          <input class="input" id="emailInput" type="email" required>
+        </label>
+
+        <label>
+          Gouvernorat *
+          <select id="regionSelect" class="input" required>
+            <option value="">-- Selectionnez un gouvernorat --</option>
+            <option value="Ariana">Ariana</option>
+            <option value="Ben Arous">Ben Arous</option>
+            <option value="Bizerte">Bizerte</option>
+            <option value="Gabes">Gabes</option>
+            <option value="Gafsa">Gafsa</option>
+            <option value="Jendouba">Jendouba</option>
+            <option value="Kairouan">Kairouan</option>
+            <option value="Kasserine">Kasserine</option>
+            <option value="Kebili">Kebili</option>
+            <option value="Medenine">Medenine</option>
+            <option value="Monastir">Monastir</option>
+            <option value="Nabeul">Nabeul</option>
+            <option value="Sfax">Sfax</option>
+            <option value="Sidi Bouzid">Sidi Bouzid</option>
+            <option value="Siliana">Siliana</option>
+            <option value="Sousse">Sousse</option>
+            <option value="Tataouine">Tataouine</option>
+            <option value="Tozeur">Tozeur</option>
+            <option value="Tunis">Tunis</option>
+            <option value="Zaghouan">Zaghouan</option>
+          </select>
+        </label>
+
+        <label>
+          Ville *
+          <input class="input" id="cityInput" type="text" placeholder="Tunis" required>
+        </label>
+
+        <h2 style="margin-top: 2em;">Parametres de Vente</h2>
+
+        <fieldset>
+          <legend>Horaires d acces</legend>
+          <label class="checkbox-label">
+            <input type="checkbox" id="openMondayCheckbox" checked>
+            <span>Ouvert lundi</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="openTuesdayCheckbox" checked>
+            <span>Ouvert mardi</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="openWednesdayCheckbox" checked>
+            <span>Ouvert mercredi</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="openThursdayCheckbox" checked>
+            <span>Ouvert jeudi</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="openFridayCheckbox" checked>
+            <span>Ouvert vendredi</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="openSaturdayCheckbox" checked>
+            <span>Ouvert samedi</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="openSundayCheckbox">
+            <span>Ouvert dimanche</span>
+          </label>
+        </fieldset>
+
+        <fieldset style="margin-top: 1em;">
+          <legend>Modes de paiement acceptes</legend>
+          <label class="checkbox-label">
+            <input type="checkbox" id="paymentCardCheckbox" checked>
+            <span>Carte bancaire</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="paymentTransferCheckbox" checked>
+            <span>Virement bancaire</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="paymentCashCheckbox" checked>
+            <span>Paiement a la livraison</span>
+          </label>
+        </fieldset>
+
+        <div style="display: flex; gap: 8px; margin-top: 2em;">
+          <button class="btn btn-cta" type="submit">Sauvegarder parametres</button>
+          <button class="btn btn-secondary" type="button" id="resetBtn">Reinitialiser</button>
+        </div>
+      </form>
+    </main>
+
+    <div id="siteFooterMount"></div>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/shop-settings.js"></script>
+  </body>
+</html>
